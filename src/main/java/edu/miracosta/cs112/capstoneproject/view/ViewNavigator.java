@@ -1,11 +1,17 @@
 package edu.miracosta.cs112.capstoneproject.view;
 
+
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
+
+
 public class ViewNavigator {
 
+
     private static Stage mainStage;
+
 
     /**
      * Sets the main stage (window) when the application first loads (in the View class)
@@ -15,15 +21,15 @@ public class ViewNavigator {
         mainStage = stage;
     }
 
+
     /**
      * Navigates from one scene to another, e.g. from the MainScene to the AddScene.
-     * @param title The title to display on the stage
-     * @param scene The new scene to load
      */
-    public static void loadScene(String title, Scene scene) {
-        mainStage.setTitle(title);
-        mainStage.setScene(scene);
+    public static void loadScene() {
+        mainStage.setTitle(Title);
+        mainStage.setScene(Scene);
         mainStage.show();
     }
+
 
 }
